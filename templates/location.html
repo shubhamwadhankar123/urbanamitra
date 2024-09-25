@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Location - Urbanmitra</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="header-title">Urbanmitra</h1>
+    </header>
+
+    <section id="location">
+        <h2>Enter Your Location</h2>
+        <form id="location-form" action="/confirm_location" method="POST">
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="">Select Country</option>
+                <option value="India">India</option>
+                <!-- Add more countries here -->
+            </select><br>
+
+            <label for="state">State:</label>
+            <select id="state" name="state" required>
+                <option value="">Select State</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <!-- Add more states here -->
+            </select><br>
+
+            <label for="district">District:</label>
+            <select id="district" name="district" required>
+                <option value="">Select District</option>
+                <option value="Mumbai">Mumbai</option>
+                <!-- Add more districts here -->
+            </select><br>
+
+            <label for="area">Area Name:</label>
+            <input type="text" id="area" name="area" placeholder="Enter Area Name" required><br>
+
+            <button type="submit">Confirm Location</button>
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    background: url('DESKTOP_BACKGROUND_1.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    background-color: #ff9900;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+}
+
+#header-title {
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px #555;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+#services {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.service-item {
+    display: flex;
+    align-items: flex-start; /* Align image and details at the top */
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.service-image {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.service-image img {
+    width: 150px; /* Fixed size */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Prevent image distortion */
+}
+
+.service-details {
+    flex-grow: 1; /* Ensure details take the remaining space */
+    text-align: left;
+}
+
+.service-details h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.service-details p {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #ff9900;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cc7a00;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Service Provider</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Register as a Service Provider</h2>
+    <form action="/register_retailer" method="POST">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="pincode">Pincode:</label>
+        <input type="text" id="pincode" name="pincode" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="mobile">Mobile No:</label>
+        <input type="text" id="mobile" name="mobile" required>
+
+        <label for="aadhar">Aadhaar No:</label>
+        <input type="text" id="aadhar" name="aadhar" required>
+
+        <button type="submit">Confirm</button>
+    </form>
+</body>
+</html>

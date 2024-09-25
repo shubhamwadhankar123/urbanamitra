@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urbanseva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="LOGO.jpeg" alt="Urbanseva Logo" id="logo">
+            <h1 id="header-title">Urbanseva</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="retailer_login.html">Retailer Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="services">
+        <h2>Our Services</h2>
+
+        <div class="service-item">
+            <div class="service-image">
+                <img src="cleaning-service.jpg" alt="Home Cleaning">
+            </div>
+            <div class="service-details">
+                <h3>Home Cleaning</h3>
+                <p>Professional cleaning services for homes and offices.</p>
+                <p>Price: RS. 200/DAY</p>
+                <button onclick="bookService('Home Cleaning', 'cleaning-service.jpg', 'Professional cleaning services for homes and offices', 'RS. 200/DAY')">Book Service Now</button>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <div class="service-image">
+                <img src="PLUMBING_SERVICE.jpg" alt="Plumbing Services">
+            </div>
+            <div class="service-details">
+                <h3>Plumbing Services</h3>
+                <p>Expert plumbing services for any kind of repairs or installations of pipe, Bathroom, WC, etc.</p>
+                <p>Price: RS. 200/UNIT</p>
+                <button onclick="bookService('Plumbing Services', 'PLUMBING_SERVICE.jpg', 'Expert plumbing services for any kind of repairs or installations', 'RS. 200/UNIT')">Book Service Now</button>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <div class="service-image">
+                <img src="ELECTRICIAN_SERVICE.jpg" alt="Electrician Services">
+            </div>
+            <div class="service-details">
+                <h3>Electrician Services</h3>
+                <p>Reliable and safe electrician services for all your needs.</p>
+                <p>Price: RS. 200/UNIT</p>
+                <button onclick="bookService('Electrician Services', 'ELECTRICIAN_SERVICE.jpg', 'Reliable and safe electrician services', 'RS. 200/UNIT')">Book Service Now</button>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <div class="service-image">
+                <img src="Carpenter_Services.jpg" alt="Carpentry Services">
+            </div>
+            <div class="service-details">
+                <h3>Carpentry Services</h3>
+                <p>Skilled carpenters for furniture repairs and custom works.</p>
+                <p>Price: RS. 300/VISIT</p>
+                <button onclick="bookService('Carpentry Services', 'Carpenter_Services.jpg', 'Skilled carpenters for furniture repairs and custom works', 'RS. 300/VISIT')">Book Service Now</button>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <div class="service-image">
+                <img src="PEST_CONTROL.jpg" alt="Pest Control">
+            </div>
+            <div class="service-details">
+                <h3>Pest Control</h3>
+                <p>Effective pest control services for homes and businesses.</p>
+                <p>Price: RS. 500/VISIT</p>
+                <button onclick="bookService('Pest Control', 'PEST_CONTROL.jpg', 'Effective pest control services for homes and businesses', 'RS. 500/VISIT')">Book Service Now</button>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <div class="service-image">
+                <img src="GARDENING_SERVICES.jpg" alt="Gardening Services">
+            </div>
+            <div class="service-details">
+                <h3>Gardening Services</h3>
+                <p>Professional gardening services to maintain your green spaces.</p>
+                <p>Price: RS. 500/VISIT</p>
+                <button onclick="bookService('Gardening Services', 'GARDENING_SERVICES.jpg', 'Professional gardening services to maintain your green spaces', 'RS. 500/VISIT')">Book Service Now</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

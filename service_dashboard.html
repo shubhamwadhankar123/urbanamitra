@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Add a New Service</h2>
+    <form action="/service_dashboard" method="POST" enctype="multipart/form-data">
+        <label for="service">Select Service:</label>
+        <select id="service" name="service">
+            <option value="Home Cleaning">Home Cleaning</option>
+            <!-- Add more service options here -->
+        </select>
+
+        <label for="details">Service Details:</label>
+        <textarea id="details" name="details" required></textarea>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="price">Price:</label>
+        <input type="text" id="price" name="price" required>
+
+        <label for="images">Upload Images:</label>
+        <input type="file" id="images" name="images" multiple>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
